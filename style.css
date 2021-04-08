@@ -39,43 +39,40 @@ header {
 }
 
 @media all and (max-width: 767px) {
-  .logo {
-    margin: 20px 0 20px 20px;
-  }
-  .nav-link {
-    margin-right: 20px;
-  }
-  .n-link {
-    display: none;
-  }
-  .nav-link-device {
-    display: flex;
-    justify-content: center;
-  }
-  .n-link-device {
-    width: 100%;
-    text-decoration: none;
-    color: gray;
-    font-weight: 600;
-    padding-bottom:10px;
-    border-bottom: 2px solid #f2f2f2;
-    text-align: center;
-    flex: 1
-  }
-  .n-link-device:hover,
-  .n-link-device:focus {
-    color: #0065fc;
-    border-bottom: 2px solid #0065fc;
-    padding-bottom: 10px;
-  }
+  header {
+   flex-direction: column;
+   align-items: flex-start;
+ }
+ .n-signup {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
+
+.logo {
+  margin: 20px 0 20px 20px;
+}
+.nav-link {
+ width: 100vw;
+ display: flex;
+}
+
+.n-link {
+  padding: 0;
+  display: block;
+  width: 50vw;
+  text-align: center;
+  padding-bottom:10px;
+  border-bottom: 2px solid #f2f2f2; 
+}
+
 @media all and (min-width: 768px) {
   .nav-link-device,
   .n-link-device {
     display: none;
   }
 }
- 
+
 .search {
   margin: 0 40px 0 40px;
 }
@@ -130,15 +127,15 @@ header {
 }
 .f-button {
   display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    border: 2px solid #d9d9d9;
-    border-radius: 20px;
-    margin: 0 20px 10px 0;
-    padding: 10px 10px 10px 20px;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 2px solid #d9d9d9;
+  border-radius: 20px;
+  margin: 0 20px 10px 0;
+  padding: 10px 10px 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
 }
 }
 .f-button:hover {
@@ -155,16 +152,16 @@ header {
   cursor: pointer;
 }
 .f-icon {
-display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #0065fc;
-    background-color: #deebff;
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: -6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0065fc;
+  background-color: #deebff;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -6px;
 }
 .f-text {
   padding: 0 5px 0 20px;
